@@ -11,7 +11,7 @@ const CONFIG = {
   images: {
     hisPhoto: "partner-photo.jpeg",
     finalPhoto: "partner-photo1.jpeg",
-    memories: ["Memory1.jpeg", "Memory2.jpeg", "Memory3.jpeg", "Memory4.jpeg", "Memory5.jpeg", "Memory6.jpeg", "Memory7.jpeg", "Memory.jpeg", "Memory9.jpeg", "Memory10.jpeg"]
+    memories: ["Memory1.jpeg", "Memory2.jpeg", "Memory3.jpeg", "Memory4.jpeg", "Memory5.jpeg", "Memory6.jpeg", "Memory7.jpeg", "Memory8.jpeg", "Memory9.jpeg", "Memory10.jpeg"]
   },
   memoryCaptions: [
     "Our First selfie as senior-junior crush with little blush 😍",
