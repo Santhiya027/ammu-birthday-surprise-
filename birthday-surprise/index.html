@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2b0718">
+  <meta name="description" content="A little birthday surprise made with love.">
+  <title>A Little Surprise for You ❤️</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="heart-background" id="heartBackground" aria-hidden="true"></div>
+  <span class="heart-cursor" id="heartCursor" aria-hidden="true">♥</span>
+  <div class="top-ui">
+    <div class="progress-wrap"><span id="progressText">1 / 13</span><div class="progress-track"><i id="progressBar"></i></div></div>
+    <button class="sound-toggle" id="soundToggle" aria-label="Toggle background music" title="Toggle music">♫ <span>Sound off</span></button>
+  </div>
+  <main id="story" aria-live="polite">
+    <section class="scene active dark-scene" data-step="1" id="step1">
+      <div class="moon">☾</div><div class="tiny-hearts" aria-hidden="true">♡　✦　♡</div>
+      <div class="scene-content intro-content">
+        <div class="couple-doodle" aria-hidden="true"><span>♡</span><b>🧸</b><b>🧸</b></div>
+        <p class="eyebrow">A tiny secret, just for you</p>
+        <h1 id="openingLine">Hey you… 👀</h1>
+        <p class="lead" id="openingSub">I made something special for you.</p>
+        <p class="muted">But there's one rule…<br><strong>You have to go through everything.</strong><br>No skipping. 😌❤️</p>
+        <button class="primary" data-next>Okay, I'm ready <span>→</span></button>
+      </div>
+      <div class="bottom-note">made with a little extra love</div>
+    </section>
+
+    <section class="scene birthday-reveal" data-step="2" id="step2">
+      <div class="halo"></div><div class="scene-content center">
+        <span class="pill">TODAY IS ALL ABOUT YOU</span>
+        <p class="tamil-quote">Ennavan enakkaaga pirantha Naal ❤️</p>
+        <p class="lead">The day my favourite person came into this world…</p>
+        <h1 class="big-title">HAPPY BIRTHDAY,<br><em>MY LOVE</em> ❤️</h1>
+        <p class="script-line">Your birthday feels like My second Birtday</p>
+        <p class="soft-copy">Because the day you were born,<br>a little piece of my happiness was born too.</p>
+        <button class="primary" data-next>There's more for you <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="scene balloons-scene" data-step="3" id="step3">
+      <div class="scene-content center wide">
+        <p class="eyebrow">A tiny birthday game</p><h2>Pop the balloons! 🎈</h2>
+        <p class="soft-copy">Tap every balloon to find the little things I love about you.</p>
+        <div class="balloon-field" id="balloonField">
+          <button class="balloon b1" data-message="My favourite person ❤️" aria-label="Pop balloon 1"><i></i></button>
+          <button class="balloon b2" data-message="My cuttest headache 😂" aria-label="Pop balloon 2"><i></i></button>
+          <button class="balloon b3" data-message="My safe place 🫶" aria-label="Pop balloon 3"><i></i></button>
+          <button class="balloon b4" data-message="My everything 💍" aria-label="Pop balloon 4"><i></i></button>
+          <button class="balloon b5" data-message="My happiness 🥹" aria-label="Pop balloon 5"><i></i></button>
+          <button class="balloon b6" data-message="My forever person ❤️" aria-label="Pop balloon 6"><i></i></button>
+        </div>
+        <p id="balloonMessage" class="reveal-message" aria-live="polite">Your little messages are waiting…</p>
+        <p id="balloonDone" class="soft-copy hidden">Okay… that was just the beginning. 👀</p>
+        <button class="primary hidden" id="balloonContinue" data-next>Continue <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="scene cake-scene" data-step="4" id="step4">
+      <div class="scene-content center">
+        <p class="eyebrow">Make a little wish</p><h2>Make a wish, birthday boy… ✨</h2>
+        <p class="soft-copy">Blow the candle or tap it if your browser can't hear you.</p>
+        <button class="cake-button" id="blowButton" aria-label="Tap to blow out the candle">
+          <div class="cake"><div class="candle"><span class="flame" id="flame"></span><span class="wick"></span></div><div class="icing"></div><div class="cake-top"></div><div class="cake-layer"></div><div class="cake-base"></div><div class="cake-plate"></div></div>
+          <span class="cake-hint">Tap to blow 💨</span>
+        </button>
+        <p id="blowStatus" class="microcopy">Blow into your microphone (optional) or tap the cake.</p>
+      </div>
+    </section>
+
+    <section class="scene explosion-scene dark-scene" data-step="5" id="step5">
+      <canvas class="confetti-canvas" aria-hidden="true"></canvas>
+      <div class="scene-content center">
+        <div class="photo-frame hero-photo"><img data-image="hisPhoto" alt="Your favourite birthday boy" src="partner-photo.jpeg"></div>
+        <p class="eyebrow">TODAY, THE WORLD GOT LUCKY</p>
+        <h1 class="explosion-title">HAPPY<br><em>BIRTHDAY</em></h1>
+        <h2 class="partner-name" data-partner>MAGII</h2>
+        <p class="lead">Today is your day…<br>but somehow, I'm the one who feels lucky.</p>
+        <p class="soft-copy">Because you were born…<br><strong>I got my person. ❤️</strong></p>
+        <button class="primary" data-next>One more surprise <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="scene question-scene" data-step="6" id="step6">
+      
+      <div class="scene-content center">
+        <p class="eyebrow">A very important question</p><h1>Will You<br><em>Marry Me?</em> 💍❤️</h1>
+        <p class="soft-copy">Choose carefully, future husband. 😌</p>
+        <div class="answer-area"><button class="yes-button" id="yesButton">YES ❤️</button><button class="no-button" id="noButton">NO 😏</button></div>
+        <p class="microcopy" id="noMessage" aria-live="polite">I have a feeling I know your answer…</p>
+      </div>
+    </section>
+
+    <section class="scene yes-scene" data-step="7" id="step7">
+      <div class="scene-content center">
+        <div class="ring-burst">💍</div><p class="eyebrow">SHE SAID… HE SAID… WE SAID YES!</p>
+        <h1 class="big-title">YAYYYYY!!! 🥹❤️</h1><h2>You said YES!</h2>
+        <p class="lead">Now you're officially stuck with me forever. 😂💍</p>
+        <p class="soft-copy">Good luck, future husband. 😌❤️</p>
+        <div class="couple-doodle celebrators" aria-hidden="true">🧸💗🧸</div>
+        <button class="primary" data-next>Wait… the Avengers have a message <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="scene avengers-scene dark-scene" data-step="8" id="step8">
+      <div class="scene-content center avenger-content">
+        <p class="eyebrow">THE AVENGERS HAVE ENTERED THE CHAT</p><h1>Wait… your favourite superheroes have a message for you 👀</h1>
+        <p class="lead">They know something about your girl that you don't… 😏❤️</p>
+        <div class="avenger-card">
+          <div class="avenger-avatar" id="avengerAvatar" data-avenger-image="black-widow">🕵️‍♀️</div>
+          <div class="cloud-bubble"><strong id="avengerName">BLACK WIDOW</strong><p id="avengerDialogue">Natasha here. 🖤</p><p id="avengerLine">She might act strong… but around you, she's just your softest girl. 🥹❤️</p></div>
+          <div class="avenger-controls"><span id="avengerCount">1 / 6</span><button class="secondary" id="avengerNext">Next hero →</button></div>
+        </div>
+        <p class="microcopy">GROUP ONE · THE ORIGINALS</p>
+      </div>
+    </section>
+
+    <section class="scene avengers-scene dark-scene" data-step="9" id="step9">
+      <div class="scene-content center avenger-content">
+        <p class="eyebrow">THE TEAM ISN'T DONE YET</p><h1>More heroes. More truth. ❤️</h1>
+        <div class="avenger-card">
+          <div class="avenger-avatar" id="avengerAvatar2" data-avenger-image="hawkeye">🏹</div>
+          <div class="cloud-bubble"><strong id="avengerName2">HAWKEYE</strong><p id="avengerDialogue2">Clint here. 🏹</p><p id="avengerLine2">The greatest shot she ever took was giving her heart to you ❤️</p></div>
+          <div class="avenger-controls"><span id="avengerCount2">1 / 6</span><button class="secondary" id="avengerNext2">Next hero →</button></div>
+        </div>
+        <p class="microcopy">GROUP TWO · THE REST OF THE TEAM</p>
+      </div>
+    </section>
+
+    <section class="scene avengers-final dark-scene" data-step="10" id="step10">
+      <div class="scene-content center">
+        <div class="avengers-emblem">A</div><p class="eyebrow">A MESSAGE FROM EARTH'S MIGHTIEST</p>
+        <p class="lead">Okay… we've all said our part.</p><p class="lead">But there's one thing we all agree on…</p>
+        <h1 class="avengers-love">SHE LOVES YOU. ❤️</h1>
+        <h2>And you better take good care of her. 😌</h2><p class="signature">— The Avengers 🦸‍♂️🦸‍♀️</p>
+        <p class="soft-copy tamil-english">One main message Unnala than ava enga movies paakuraa 😂❤️</p>
+        <button class="primary" data-next>Now, our memories 📸 <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="scene memories-scene" data-step="11" id="step11">
+      <div class="scene-content center wide">
+        <p class="eyebrow">LITTLE PIECES OF FOREVER</p><h1>Our Memories 📸</h1>
+        <p class="soft-copy">Every picture holds a little piece of us.</p>
+        <div class="memory-viewer">
+          <button class="carousel-arrow" id="memoryPrev" aria-label="Previous photo">‹</button>
+          <div class="memory-photo"><img id="memoryImage" alt="A memory of us" src=""><span class="photo-number" id="memoryNumber">01 / 04</span></div>
+          <button class="carousel-arrow" id="memoryNext" aria-label="Next photo">›</button>
+        </div>
+        <p class="memory-caption" id="memoryCaption">One of my favourite moments with you ❤️</p>
+        <div class="dots" id="memoryDots" aria-label="Choose memory"></div>
+        <p class="microcopy">Swipe the photo or use the arrows to travel through our little story.</p>
+        <button class="primary" data-next>Something from my heart 💌 <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="scene letter-scene dark-scene" data-step="12" id="step12">
+      <div class="scene-content center">
+        <p class="eyebrow">JUST BETWEEN YOU AND ME</p><h1>A letter for you 💌</h1>
+        <button class="envelope" id="envelope" aria-label="Open your love letter"><span class="envelope-heart">♡</span><span class="envelope-label">Tap to open</span></button>
+        <div class="letter-paper hidden" id="letterPaper"><p class="letter-to">To my favourite person,</p><p id="letterText"></p><p class="letter-signoff">Forever yours,<br><strong data-myname>YOUR GIRL 🫶</strong></p></div>
+        <p id="letterHint" class="soft-copy">I put a little piece of my heart in here.</p>
+        <button class="primary hidden" id="letterContinue" data-next>One last thing, my love <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="scene final-scene" data-step="13" id="step13">
+      <div class="final-stars" aria-hidden="true">✦　·　♡　✧　·　✦</div>
+      <div class="scene-content center">
+        <div class="photo-frame final-photo"><img data-image="finalPhoto" alt="My favourite person" src=""></div>
+        <p class="eyebrow">MY PERSON. MY HOME. MY ALWAYS.</p><h1 class="big-title">HAPPY BIRTHDAY,<br><em>MY BETTERHALF</em> ❤️</h1>
+        <p class="lead">I hope this little website made you smile…</p><p class="soft-copy">Because making you smile is one of my favourite things.</p>
+        <h2 class="i-love-you">I LOVE YOU LOTZZZ🤗😘💋👻🫂😁✨</h2>
+        <p class="signature">Made with love, specially for you.</p><p class="soft-copy" data-myname>Your girl 🫶</p>
+        <button class="secondary replay-button" id="replayButton">Relive our little story ↺</button>
+      </div>
+    </section>
+  </main>
+  <audio id="backgroundMusic" loop preload="none"></audio>
+  <audio id="effectAudio" preload="none"></audio>
+  <script src="js/script.js"></script>
+</body>
+</html>
